@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8545bc5cb7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafío CSS avanzado Ana Robles</title>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="./assets/img/logo_cine.png">
+        <ul class="menu-desktop">
+            <li><p>Películas</p></li>
+            <li><p>Cines</p></li>
+            <li><p>Promociones</p></li>
+            <li><p>Socios</p></li>
+            <li><p>Confitería</p></li>
+            <li><p><a href="#contacto">Contacto</a></p></li>
+        </ul>
+        <div class="icono">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </nav>
+    <header>
+        <h2>Ordenar por</h2>
+        <select name="select" id="filtro">
+            <option value="value1" selected><p>Ciudad</p></option>
+            <option value="value2"><p>Cine</p></option>
+            <option value="value3"><p>Día</p></option>
+            <option value="value3"><p>Horario</p></option>
+            <option value="value3"><p>Género</p></option>
+            <option value="value3"><p>Idioma</p></option>
+            <option value="value3"><p>Formato</p></option>
+        </select>
+    </header>
+    <main>
+        <section class="cards">
+            <article>
+                <img class="peli" src="./assets/img/guason 2.jpeg" alt="guason 2">
+                <p>Guasón 2: Folie a deux</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/alien.jpeg" alt="Alien Romulus">
+                <p>Alien Romulus</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/beetlejuice.jpeg" alt="Beetlejuice">
+                <p>Beetlejuice Beetlejuice</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/carnada.jpeg" alt="Carnada">
+                <p>Carnada</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/deadpool.jpeg" alt="tinta roja">
+                <p>Deadpool & Wolverine</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/cenicienta.jpeg" alt="La maldición de la Cenicienta">
+                <p>La maldición de la Cenicienta</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/sustancia.jpeg" alt="La Sustancia">
+                <p>La Sustancia</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/villano.jpeg" alt="Mi villano favorito 4">
+                <p>Mi villano favorito 4</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/nohables.jpeg" alt="No hables con extraños">
+                <p>No hables con extraños</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/paranoia.jpeg" alt="Parano-ia">
+                <p>Parano-ia</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/robot.jpeg" alt="Robot salvaje">
+                <p>Robot salvaje</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+            <article>
+                <img class="peli" src="./assets/img/romper.jpeg" alt="Romper el círculo">
+                <p>Romper el círculo</p>
+                <button><p>Comprar</p></button>
+                <button><p>Ver trailer</p></button>
+            </article>
+        </section>
+   
+    </main>
+    <footer>
+	<div class="contact_form">
+		<div class="formulario">			
+            <h2 id="contacto">Contacto</h2>
+				<form>
+                    <div class="formulario">
+                        <p>
+						    <label for="nombre" class="colocar_nombre">Nombre
+						    <span class="obligatorio">*</span>
+						    </label>
+						    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                    </div>
+                    <div class="formulario">
+                        <p>
+						    <label for="email" class="colocar_email">Email
+						    <span class="obligatorio">*</span>
+						    </label>
+						    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    </div>
+                    <div class="formulario">
+                        <p>
+						    <label for="mensaje" class="colocar_mensaje">Mensaje
+						    <span class="obligatorio">*</span>
+						    </label>                     
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                        </p>
+                     </div>
+  								
+					<button class="send" type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>					
+					</form>
+		</div>	
+	</div>
+        <div class="rrss">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <h2>Todos los derechos reservados</h2>
+        </div>
+        
+    </footer>
+</body>
+</html>

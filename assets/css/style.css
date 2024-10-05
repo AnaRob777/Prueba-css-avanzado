@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(174, 65, 225);
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: medium; 
+}
+header{
+    padding: 1em;
+    display: grid;
+    place-content: center;
+    background-color: #1a1a1a ;
+    color: white;
+    grid-area: header;
+}
+select{
+    border-radius: 5px;
+    padding: 0 0.5em ;
+}
+button{
+    background-color: rgb(174, 65, 225);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+button:hover{
+    background-color: white;
+    color:#1a1a1a
+}
+nav{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+    background-color: darkorange;
+    color: white;
+}
+.logo{
+    width: 4em;
+}
+.menu-desktop{
+    display: none;
+}
+
+img{
+    width: 200px;
+}
+article{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    gap: 1em;
+    padding: 1em;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    align-content: center;
+    padding: 1em;
+    grid-area: foot;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+main{
+    grid-area: main;
+}
+.cards{
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 0;
+}
+.navegacion{
+    display: grid;
+    place-content:center;
+    grid-template-columns: auto 2em 2em 2em 2em 2em auto;
+    padding: 1em;
+}
+.rrss{
+    text-align: center;
+}
+.peli:hover{ 
+    transform: scale(1.1,1.1);
+    transition-duration: 500ms;
+    border-radius: 20px;
+}
+label{
+    margin: 1em;
+}
+input{
+    margin: 1em;
+}
+.send{
+    margin: 1em;
+}
+@media (min-width: 577px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "nav header"
+        "nav main"
+        "foot foot" ;
+        grid-template-columns: 15em 1fr;
+    }
+    a{
+        text-decoration: none;
+    }
+    .logo{
+        width: 8em;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1em 0;
+        width: 80vw;
+    }
+    main{
+        display: grid;
+        place-content: center;
+    }
+    footer{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .menu-desktop{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+
+    }
+    .icono{
+        display: none;
+    }
+    li{
+        list-style: none;
+        padding:0.5em ;
+    }       
+    li:hover{
+        color: #1a1a1a;
+    }
+    .navegacion{
+        display: grid;
+        place-content:center;
+        grid-template-columns: auto 2em 2em 2em  auto;
+        padding: 1em;
+    }
+}
+@media (min-width: 1100px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "nav header"
+        "nav main"
+        "foot foot" ;
+        grid-template-columns: 15em 1fr;
+    }
+    a{
+        text-decoration: none;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 1em 0;
+        width: 80vw;
+    }
+    main{
+        display: grid;
+        place-content: center;
+    }
+    footer{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .menu-desktop{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+
+    }
+    .icono{
+        display: none;
+    }
+    li{
+        list-style: none;
+        padding:0.5em ;
+    }       
+    li:hover{
+        color: #1a1a1a;
+    }
+    .navegacion{
+        display: grid;
+        place-content:center;
+        grid-template-columns: auto 2em 2em 2em 2em auto;
+        padding: 1em;
+    }}
+    @media (min-width: 1350px) {
+        body {
+            display: grid;
+            grid-template-areas: 
+            "nav header"
+            "nav main"
+            "foot foot" ;
+            grid-template-columns: 15em 1fr;
+        }
+        a{
+            text-decoration: none;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 1em 0;
+            width: 80vw;
+        }
+        main{
+            display: grid;
+            place-content: center;
+        }
+        footer{
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .menu-desktop{
+            display: flex;
+            flex-direction: column;
+            padding: 1em 0;
+    
+        }
+        .icono{
+            display: none;
+        }
+        li{
+            list-style: none;
+            padding:0.5em ;
+        }       
+        li:hover{
+            color: #1a1a1a;
+        }
+        .navegacion{
+            display: grid;
+            place-content:center;
+            grid-template-columns: auto 2em 2em 2em 2em 2em auto;
+            padding: 1em;
+        }}
